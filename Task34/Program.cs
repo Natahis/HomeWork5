@@ -2,10 +2,11 @@
 // Напишите программу, которая покажет количество чётных чисел в массиве.
 // [345, 897, 568, 234] -> 2
 
-int size = new Random().Next(4, 9);
+
 
 int[] GreatArray(int min, int max)
 {
+    int size = new Random().Next(4, 9);
     int[] array = new int[size];
     for (int i = 0; i < array.Length; i++)
     {

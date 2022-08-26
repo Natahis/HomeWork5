@@ -3,7 +3,7 @@
 // [3.5, 7.1, 22.9, 2.3, 78.5] -> 76.2
 
 
-double[] array = {3.5, 7.1, 22.9, 2.3, 78.5};
+double[] array = {2.3, 3.5, 7.1, 22.9, 78.5};
 
 void PrintArray(double[] array)
 {
@@ -17,13 +17,13 @@ void PrintArray(double[] array)
 
 double DiffMaxMin(double[] array)
 {
-    double max = 0;
-    double min = 0;
+    double max = array[0];
+    double min = array[0];
     double diff = 0;
     for (int i = 0; i < array.Length; i++)
     {
         if (array[i] > max) max = array[i];
-        else min = array[i];
+        else if (array[i] < min) min = array[i];
         diff = max - min;
     }
     return diff;

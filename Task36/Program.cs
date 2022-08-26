@@ -4,10 +4,11 @@
 // [-4, -6, 89, 6] -> 0
 
 
-int size = new Random().Next(4, 9);
+
 
 int[] GreatArray(int min, int max)
 {
+    int size = new Random().Next(4, 9);
     int[] array = new int[size];
     for (int i = 0; i < array.Length; i++)
     {
